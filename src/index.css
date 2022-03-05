@@ -1,10 +1,17 @@
 body {
   margin: 0;
+  background-color: #141414;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --font-family-title: lores-15, sans-serif;
+  --font-family-title2: lores-12, sans-serif;
+  --font-family-paragraph: futura-pt, sans-serif;
+  --font-family-paragraph-bold: futura-pt-bold, sans-serif;
+  
 }
 
 code {

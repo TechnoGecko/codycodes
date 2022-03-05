@@ -1,0 +1,23 @@
+.cc__projects-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 195px;
+}
+
+.cc__projects-title {
+    text-align: center;
+    font-family: var(--font-family-title);
+    margin-top: 225px;
+    color: #8CDE8C;
+    margin-bottom: 205px;
+
+}
+
+.cc__projects-proj-container {
+   display: flex;
+   flex-direction: row;
+   gap: 70px 20px;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin-bottom: 95px;
+}

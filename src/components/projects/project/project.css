@@ -1,0 +1,208 @@
+.cc__project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    min-height: 320px;
+    color: rgb(189, 188, 188);
+    border-radius: 12px;
+    background-color: #5B29A6;
+    border-right: 7px solid #35116b;
+    border-top: 2px solid #35116b;
+    border-left: 2px solid #35116b;
+    margin: 0px 10px;
+}
+
+.cc__project-container::after {
+    content:'';
+    min-width: 300px;
+    margin: 0px 20px;
+    height: 70px;
+    border-radius:50%;
+    display: flex;
+    flex: 1;
+    background-color: #5B29A6;
+    transform: translate(0px, 325px);
+    border-bottom: 7px solid #35116b;
+    border-right: 1px solid #35116b;
+    position: absolute;
+    z-index: -1;
+}
+
+.cc__project-img-container {
+    width: 235px;
+    height: 54%;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    border: 8px solid rgba(0, 0, 0, 0.637);
+    overflow:hidden;
+    z-index:10;
+}
+
+.cc__project-img-container::after{
+    content:'';
+    position: absolute;
+    width: 240px;
+    height: 92px;
+    border-radius: 50%;
+    background-color: rgb(12, 12, 12);
+    transform:translate(0px,100px);
+    z-index: -5;
+}
+
+.cc__project-img-container img {
+    width: 240px;
+    height: 202px;
+    object-fit:fill;
+    border-radius: 10px;
+}
+
+.cc__project-img-container-overlay {
+    position: absolute;
+    width: 240px;
+    height: 200.4px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0, 0.37);
+    border: 1px rgba(255,255,255,0.4) solid;
+    border-bottom: 1px rgba(40,40,40,0.35) solid;
+    border-right: 1px rgba(40,40,40,0.35) solid;
+    cursor: pointer;
+}
+
+.cc__project-img-container-overlay:hover {
+    background-color: rgba(0,0,0, 0.17);
+    box-shadow: 0px 0px 14px white;
+}
+
+.cc__project-info {
+    display: flex; 
+    flex-direction: column;
+}
+
+
+
+.cc__project-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 4px;
+    font-family: var(--font-family-paragraph);
+    z-index:11;
+    cursor: pointer;
+}
+
+.cc__project-title:hover {
+    color: rgb(218, 218, 218);
+    text-shadow: 0px 0px 3px rgb(218, 218, 218);
+}
+
+
+.cc__project-nav {
+   display: flex;
+   justify-self: flex-end;
+   justify-content: space-between;
+   width:80%;
+   max-width: 90%;
+   height: 92px;
+
+}
+
+.cc__project-dpad {
+    height: 87%;
+    width: 35%;
+    border-left: 12px;
+    background-image: url('../../../../public/media/buttons/cc__project-d-pad-neutral.png');
+    background-size: cover;
+    overflow-y:visible;
+    background-position: center;
+    display: flex;
+}
+
+
+
+
+.cc__project-dpad-button {
+     width: 50%;
+     height: 100%;
+}
+
+.cc__project-dpad img {
+    object-fit: fill;
+    width: 90%;
+    display: none;
+}
+
+.cc__project-buttons {
+    height: 100%;
+    width: 50%;
+}
+.cc__project-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+
+.cc__projects-git {
+width: 40%;
+display: flex;
+align-items: flex-end;
+height: 80%;
+
+}
+
+.cc__projects-git img {
+    width: 80%;
+    object-fit: fill;
+    cursor: pointer;
+}
+
+.cc__projects-git-img {
+    width: 43px;
+    height: 43px;
+    background-image: url(../../../../public/media/buttons/cc__project-git-button-neutral.png);
+    background-position: center;
+    overflow: visible;
+    background-size: cover;
+    margin-top: 4px;
+    
+}
+
+.cc__projects-git-img:active {
+    transform: translate(0px, 1px);
+}
+
+.cc__projects-web {
+    width: 40%;
+    height: 100%;
+   
+}
+
+.cc__projects-web img {
+    width: 80%;
+    object-fit: fill;
+     cursor: pointer;
+
+}
+    
+.cc__projects-web-img:active {
+transform: translate(0px, 1px);
+}
+
+.cc__projects-web-img {
+    width: 40px;
+    height: 40px;
+    background-image: url(../../../../public/media/buttons/cc__project-www-button-neutral.png);
+    background-position: center;
+    overflow: visible;
+    background-size: cover;
+    margin-top: 2px;
+    padding: 1px;
+
+}
+
