@@ -1,0 +1,24 @@
+.cc__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(228, 228, 228);
+    width: 100%;
+}
+
+.cc__about-title {
+    color: #8CDE8C;
+}
+
+.cc__about-paragraph {
+    width: 80%;
+    max-width: 860px;
+    line-height: 2.3rem;
+    text-indent: 42px;
+    margin-bottom: 45px;
+}
+
+.p3 {
+    margin-bottom: 200px;
+}
+

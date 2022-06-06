@@ -27,7 +27,7 @@ const Project = (props) => {
         <div className="cc__project-container">
             <div className="cc__project-img-container">
                 <div className="cc__project-img-container-overlay" onClick={props.popupShowFunction}></div>
-                <img src={props.imgUrl}></img>
+                <img src={props.imgUrl} alt="a screenshot of one project"></img>
             </div>
             <div className="cc__project-info">
                 <p className="cc__project-title" onClick={props.popupShowFunction}>{props.projectName}</p>
@@ -44,14 +44,14 @@ const Project = (props) => {
                 </div>
                 <div className="cc__project-buttons">
                 <div className="cc__projects-git">
-                    <a className="cc__projects-git-link" href={props.gitUrl}><Tippy content="View on Github">
+                    <a className="cc__projects-git-link" href={props.gitUrl} target="_blank"><Tippy content="View on Github">
                     <div className="cc__projects-git-img"></div>
                 
                 </Tippy></a>
                 
                 </div>
                 <div className="cc__projects-web">
-                    <a className="cc__projects-web-link" href={props.webUrl}><Tippy content="View live website">
+                    <a className="cc__projects-web-link" href={props.webUrl} target="_blank"><Tippy content="View live website">
                 <div className="cc__projects-web-img"></div>
                 
                 </Tippy></a>
@@ -60,7 +60,7 @@ const Project = (props) => {
                   
                 </div>
             </div>
-            <Popup trigger={props.popupState} closeFunction={props.popupCloseFunction} imageUrl={props.imgUrl} projectName={props.projectName} projectText={props.projectText}></Popup>
+            <Popup trigger={props.popupState} webUrl={props.webUrl} gitUrl={props.gitUrl} closeFunction={props.popupCloseFunction} imageUrl={props.imgUrl} projectName={props.projectName} projectText={props.projectText}></Popup>
         </div>
     )
 }

@@ -24,8 +24,8 @@ const Popup = (props) => {
             <p className="cc__popup-description">{props.projectText}</p>
 
             <div className="cc__popup-links">
-                <a className="cc__popup-link popup-git-link"><p>View on Github</p></a>
-                <a className="cc__popup-link popup-web-link"><p>View Live Website</p></a>
+                <a className="cc__popup-link popup-git-link" href={props.gitUrl} target="_blank"><p>View on Github</p></a>
+                <a className="cc__popup-link popup-web-link" href={props.webUrl} target="_blank"><p>View Live Website</p></a>
             </div>
         </div>
         </div>

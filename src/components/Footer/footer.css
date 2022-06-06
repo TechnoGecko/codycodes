@@ -1,0 +1,130 @@
+.cc__footer-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 420px;
+    color: white;
+    background-color: #0f0f0f;
+    border-top: 4px solid #5B29A6;
+    box-shadow: 0px -6px 7px black;
+}
+
+
+
+.cc__footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+
+
+.cc__footer-cta-container {
+    display: flex;
+    min-width: 433px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.cc__footer-cta {
+    font-family: var(--font-family-paragraph);
+    font-weight: 400;
+    font-size: 28px;
+    justify-self: center;
+    text-align: center;
+}
+
+
+
+.cc__footer-contact-button{
+    margin-top: 65px;
+    text-decoration: none;
+    width: 120px;
+    height: 34px;
+    border-radius: 40px;
+    color: #8CDE8C;
+    font-weight: 600;
+    transition: .3s;
+    border: 5px solid #8CDE8C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cc__footer-contact-button:hover {
+    background-color: #8CDE8C;
+    color: black;
+
+}
+
+
+.cc__footer-img-container {
+    max-width: 250px;
+    min-width: 100px;
+    width: 24vw;
+    position: absolute; 
+    right: 7vw;
+}
+
+.cc__footer-img-container img {
+    width: 100%;
+    object-fit: fill;
+}
+
+.cc__footer-contact-links {
+    margin: 32px 0px;
+    display: flex;
+
+    gap: 32px;
+}
+
+@media screen and (max-width: 860px) {
+.cc__footer-cta-container {
+    width: 100%;
+    margin-top: 42px;
+
+}
+
+.cc__footer-wrapper {
+    justify-content: center;
+}
+
+.cc__footer-cta-container {
+    min-width: 240px;
+}
+
+.cc__footer-cta {
+    font-size: 22px;
+    
+}
+.cta1{
+    margin-top: 102px;
+}
+
+.cc__footer-img-container {
+    top: 0;
+    right: auto;
+    transform: translate(-3vw,0);
+    height: 140px;
+    width: 140px;
+}
+}
+
+@media screen and (max-width: 486px) {
+    .cc__footer-cta {
+        font-size: 16px;
+    }
+
+    .cc__footer-img-container {
+        top: 0;
+        right: auto;
+        transform: translate(-8vw,0);
+    }
+}

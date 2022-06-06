@@ -37,9 +37,6 @@ z-index: 9000;
     background-color: #8CDE8C;
     color: black;
     transform: translate(0px, -3px);
-
-
-
 }
 
 @media screen and (min-width: 896px) {
@@ -60,5 +57,20 @@ z-index: 9000;
         border-radius: 40px;
         width: 22%;
         transition: .3s;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .cc__navbar-nav-links {
+        width: 75%;
+    }
+
+    .cc__navbar-nav-link:active {
+    
+        font-size: 18px;
+        background-color: #8CDE8C;
+        color: black;
+        transform: translate(0px, -3px);
+        transition: 3s;
     }
 }

@@ -22,7 +22,7 @@
     display: flex;
     flex: 1;
     background-color: #5B29A6;
-    transform: translate(0px, 325px);
+    transform: translate(0px, 319px);
     border-bottom: 7px solid #35116b;
     border-right: 1px solid #35116b;
     position: absolute;
@@ -58,7 +58,7 @@
     width: 240px;
     height: 202px;
     object-fit:fill;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .cc__project-img-container-overlay {
@@ -66,8 +66,8 @@
     width: 240px;
     height: 200.4px;
     border-radius: 10px;
-    backdrop-filter: blur(5px);
-    background-color: rgba(0,0,0, 0.37);
+    backdrop-filter: blur(1px);
+    background-color: rgba(0,0,0, 0.52);
     border: 1px rgba(255,255,255,0.4) solid;
     border-bottom: 1px rgba(40,40,40,0.35) solid;
     border-right: 1px rgba(40,40,40,0.35) solid;
@@ -164,12 +164,11 @@ height: 80%;
 
 .cc__projects-git-img {
     width: 43px;
-    height: 43px;
+    height: 44px;
     background-image: url(../../../../public/media/buttons/cc__project-git-button-neutral.png);
     background-position: center;
     overflow: visible;
     background-size: cover;
-    margin-top: 4px;
     
 }
 

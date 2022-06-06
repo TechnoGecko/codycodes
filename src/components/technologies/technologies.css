@@ -6,6 +6,12 @@
     flex-direction: column;
     align-items: center;
     margin-top: 185px;
+    margin-bottom: 125px;
+}
+
+.cc__technologies-title{
+    font-size: 66px;
+    color: #8CDE8C;
 }
 
 .cc__technologies-text {
@@ -13,33 +19,38 @@
     font-size: 29px;
     font-weight: 400; 
     color: #e3e3e3;
-    margin-bottom: 120px;
+    margin-top:32px;
+    margin-bottom: 140px;
 
 }
+
+
 
 .cc__technologies-images {
-    width: 100%;
-    margin-top: 95px;
-    min-height: 120px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 45px 32px;
 }
+
  .cc__technology {
-     width: 120px;
+     width: 220px;
      height: 220px;
-    margin: 45px 45px;
- }
-
-
- .cc__technology {
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
+     margin: 0 auto;
+     border: 5px solid #5B29A6;
+     padding: 12px;
+     border-radius: 7px;
+     background-color: rgb(5, 5, 5);
+     box-shadow: 0px 0px 0px 5px #cacaca, 4px 4px 7px 10px #000000;
  }
+
+
+
 
  .cc__technology svg {
     width: 100%;
@@ -52,9 +63,42 @@ color: white;
 font-size: 24px;
 }
 
+@media screen and (max-width: 860px) {
+    .cc__technologies-text {
+        font-size: 24px;
+        width: 60%;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    .cc__technologies-images {
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        gap: 45px 14px;
+    }
+
+    .cc__technology {
+        width: 160px;
+        height: 160px;
+    }
+}
+
 @media screen and (max-width: 468px) {
     .cc__technologies-text {
-        font-size: 22px;
+        font-size: 16px;
         text-align: center;
+        width: 90%;
+    }
+    .cc__technologies-images {
+        grid-template-columns: 1fr;
+        width: 90%;
+        
+    }
+
+    .cc__technology {
+        width: 120px;
+        height: 120px;
     }
 }

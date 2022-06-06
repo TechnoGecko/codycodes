@@ -11,10 +11,9 @@ const Navbar = () => {
         <div className="cc__navbar-container">
             <img src="/media/CC-favicon.png" alt="CodyCodes logo"/>
             <div className="cc__navbar-nav-links" id="navbar">
-                    <a className="cc__navbar-nav-link link1" href="#projects">Projects</a>
-                    <a className="cc__navbar-nav-link link2" href="#About">About</a>
-                    <a className="cc__navbar-nav-link link3" href="#Contact">Contact</a>
-
+                    <Link className="cc__navbar-nav-link link1" to="/" onClick={() => window.scrollTo(0, 0)}>Projects</Link>
+                    <Link className="cc__navbar-nav-link link2" to="/About" onClick={() => window.scrollTo(0, 0)}>About</Link>
+                    <Link className="cc__navbar-nav-link link3" to="/Contact" onClick={() => window.scrollTo(0, 0)}>Contact</Link>
             </div>
             
         </div>
