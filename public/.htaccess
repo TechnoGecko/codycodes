@@ -7,5 +7,7 @@
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-l
   RewriteRule . /index.html [L]
+  AddType video/webm .webm
+  AddType video/mp4 .mp4
 
 </IfModule>
